@@ -1,7 +1,7 @@
 function ItemListContainer({ greeting }) {
   const myStyles = {
-    color: "#7d1d3f",
-    fontSize: "15 px",
+    color: "#67645e",
+    fontSize: "30px",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",

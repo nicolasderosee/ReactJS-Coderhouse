@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <NavBar></NavBar>
-      <ItemListContainer greeting="Welcome to Zadig & Voltaire´s online shop"></ItemListContainer>
+      <ItemListContainer greeting="Welcome to the rhode skin online shop"></ItemListContainer>
     </>
   );
 }

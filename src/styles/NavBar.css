@@ -3,7 +3,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 50px 20px 0 20px;
+  padding: 20px 20px 20px 20px;
+  background-color: #f1f0ed;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 .left-container {
@@ -12,4 +15,18 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+button {
+  font-size: 16px;
+  letter-spacing: 0px;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #67645e;
+  transition: .3s ease all;
+}
+
+button:hover {
+  color: white;
 }
