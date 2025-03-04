@@ -1,11 +1,13 @@
-import ItemListContainer from "./comoponents/ItemListContainer";
-import NavBar from "./comoponents/NavBar";
+import ItemListContainer from "./components/ItemListContainer";
+import NavBar from "./components/NavBar";
+import VideoOverlay from "./components/VideoOverlay";
 
 function App() {
   return (
     <>
-      <NavBar></NavBar>
-      <ItemListContainer greeting="Welcome to the rhode skin online shop"></ItemListContainer>
+      <NavBar/>
+      <VideoOverlay />
+      <ItemListContainer />
     </>
   );
 }

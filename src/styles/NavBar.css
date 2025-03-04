@@ -1,20 +1,23 @@
 .navbar-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   padding: 20px 20px 20px 20px;
   background-color: #f1f0ed;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
 
-.left-container {
-  width: 50%;
+.navbar-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  max-width: 1344px;
+  margin: 0 auto;
 }
 
 button {
@@ -29,4 +32,14 @@ button {
 
 button:hover {
   color: white;
+}
+
+.left-menu{
+  display: flex;
+  gap: 20px;
+}
+
+.right-menu{
+  display: flex;
+  gap: 20px;
 }

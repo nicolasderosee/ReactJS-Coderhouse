@@ -5,7 +5,7 @@ function CartWidget() {
   return (
     <section className="cartwidget-container">
       <img className="shopping-cart" src={cart} alt="shopping cart" />
-      <p>(10)</p>
+      <p>(0)</p>
     </section>
   );
 }
