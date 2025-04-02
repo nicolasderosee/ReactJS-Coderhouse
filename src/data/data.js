@@ -5,8 +5,9 @@ export const items = [
       title: "Shape",
       description: "peptide lip shape",
       extra: "The contouring lip shaper",
-      price: "$24.00",
-      category: "makeup"
+      price: 24.00,
+      category: "makeup",
+      stock: 20,
     },
     {
       id: 2,
@@ -14,8 +15,9 @@ export const items = [
       title: "Lip Shapes",
       description: "the peptide lip shape set",
       extra: "Four shades of your choice",
-      price: "$92.00",
-      category: "makeup"
+      price: 92.00,
+      category: "makeup",
+      stock: 10,
     },
     {
       id: 3,
@@ -23,7 +25,8 @@ export const items = [
       title: "Mirror",
       description: "rhode mirror",
       extra: "The compact mirror",
-      price: "$24.00",
-      category:"accesory"
+      price: 24.00,
+      category:"accesory",
+      stock: 3,
     }
   ];

@@ -1,0 +1,95 @@
+.promo-section {
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 1550px) {
+    .promo-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.promo-banner {
+    position: relative;
+    background-image: url("../assets/banner.webp");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 800px;
+    border-radius: 12px;
+    overflow: hidden; /* Hace que el border-radius se aplique correctamente */
+}
+
+.promo-banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.promo-content {
+    flex-flow: column;
+    max-width: 500px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+}
+    
+.promo-title{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: -2px;
+    color: white;
+    width: fit-content;
+    }
+
+.promo-description{
+    font-family: "Roboto", serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+}
+  
+.promo-button {
+    border-radius: 50px;
+    display: flex;
+    height: 40px;
+    padding: 0px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: fit-content;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    transition: .3s ease all;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.promo-button:hover {
+    background-color: #67645e;
+    color: white;
+}

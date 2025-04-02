@@ -14,7 +14,7 @@ export const Item = ({ item }) => (
                             {item.description}
                         </p>
                         <p className="card-price">
-                            {item.price}
+                            ${item.price}
                         </p>
                     </div>
                     <p className="card-extra-description">

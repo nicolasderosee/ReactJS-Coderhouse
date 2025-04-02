@@ -33,7 +33,7 @@ function NavBar() {
           <NavLink to="/Search">Search</NavLink>
           <NavLink to="/Account">Account</NavLink>
           <div className="cartwidget-container">
-            <CartWidget />
+            <NavLink to="/cart"><CartWidget /></NavLink>
           </div>
         </div>
       </div>
