@@ -1,7 +1,9 @@
 import { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
+import { getFirestore, getDoc, doc } from "firebase/firestore";
+
 import "../styles/ItemDetailContainer.css";
-import { items } from "../data/data";
+
 import { ItemCounter } from "./ItemCounter";
 import { CartContext } from "../contexts/CartConext";
 
@@ -14,12 +16,14 @@ export const ItemDetailContainer = () => {
   const { onAdd } = useContext(CartContext);
 
   useEffect(() => {
-    new Promise((resolve) => setTimeout(() => resolve(items), 2000))
-      .then((response) => {
-        const finded = response.find((item) => item.id === Number(id));
-        setProducts(finded);
-      })
-      .finally(() => setLoading(false));
+    const db = getFirestore();
+    const refDoc = doc(db, "items", id);
+
+    getDoc(refDoc)
+    .then((snapshot) => {
+      setProducts({...snapshot.data(), id: snapshot.id });
+    })
+    .finally(() => setLoading(false));
   }, [id]);
 
   const add = (count) => {

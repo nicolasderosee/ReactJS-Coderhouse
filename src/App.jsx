@@ -23,7 +23,6 @@ function App() {
               <VideoOverlay />
               <ItemListContainer />
               <PromoBanner />
-              <Footer />
             </>
           } />
           <Route path="/shop" element={<ItemListContainer />} />
@@ -32,6 +31,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="*" element="oops 404" />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </Provider>
     </>
